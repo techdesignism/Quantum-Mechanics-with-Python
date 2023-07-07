@@ -14580,7 +14580,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Ch1---Complex-Number-&amp;-Linear-Algebra">Ch1 - Complex Number &amp; Linear Algebra<a class="anchor-link" href="#Ch1---Complex-Number-&amp;-Linear-Algebra">&#182;</a></h1>
+<h1 id="Ch1---Complex-Number">Ch1 - Complex Number<a class="anchor-link" href="#Ch1---Complex-Number">&#182;</a></h1>
 </div>
 </div>
 </div>
@@ -14656,17 +14656,18 @@ where $2$ is a real number (Re) and $3i$ is an imaginary number (Im).</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="c1">#import the libraries of sympy</span>
 
-<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;a b x y&quot;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;a b c d x y&quot;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
 <span class="c1">#define the variable</span>
 
 <span class="n">complex_num1</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">*</span><span class="n">I</span>
 <span class="n">complex_num2</span> <span class="o">=</span> <span class="n">b</span><span class="o">+</span><span class="n">a</span><span class="o">*</span><span class="n">I</span>
+<span class="n">complex_num3</span> <span class="o">=</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="o">*</span><span class="n">I</span>
 <span class="c1">#define two complex numbers, we can use &quot;I&quot; to represent complex number &quot;i&quot;</span>
 </pre></div>
 
@@ -14680,10 +14681,216 @@ where $2$ is a real number (Re) and $3i$ is an imaginary number (Im).</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">complex_num1</span>
+<span class="c1">#a is real part, b is imaginary part</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[2]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle a + i b$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complex_num2</span>
+<span class="c1">#b is real part, a is imaginary part</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle i a + b$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complex_num3</span>
+<span class="c1">#x is real part, y is imaginary part</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[4]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle x + i y$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Graphical-representation">Graphical representation<a class="anchor-link" href="#Graphical-representation">&#182;</a></h1><p>In the graph below, check the representation of complex numbers along the axes. Here we can see, the x-axis represents real part and y represents the imaginary part.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><img src="images/Complex-Numbers-in-Maths-1.png" alt="&quot;&quot;"></p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Let us see an example here. If we have to plot a graph of complex number 3 + 4i, then:</p>
+<p><img src="images/Complex-Numbers-in-Maths-2.png" alt="&quot;&quot;"></p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complex_num4</span> <span class="o">=</span> <span class="mi">4</span><span class="o">-</span><span class="mi">8</span><span class="o">*</span><span class="n">I</span>
+<span class="n">complex_num4</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle 4 - 8 i$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">re</span><span class="p">(</span><span class="n">complex_num4</span><span class="p">)</span>
+<span class="c1">#return the real part</span>
 </pre></div>
 
      </div>
@@ -14707,7 +14914,7 @@ where $2$ is a real number (Re) and $3i$ is an imaginary number (Im).</p>
 
 
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
-$\displaystyle a + i b$
+$\displaystyle 4$
 </div>
 
 </div>
@@ -14724,7 +14931,8 @@ $\displaystyle a + i b$
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complex_num2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">im</span><span class="p">(</span><span class="n">complex_num4</span><span class="p">)</span>
+<span class="c1">#return the imaginary part</span>
 </pre></div>
 
      </div>
@@ -14748,13 +14956,815 @@ $\displaystyle a + i b$
 
 
 <div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
-$\displaystyle i a + b$
+$\displaystyle -8$
 </div>
 
 </div>
 
 </div>
 
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">re</span><span class="p">(</span><span class="n">complex_num4</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">im</span><span class="p">(</span><span class="n">complex_num4</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="n">markersize</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+
+<div class="jp-RenderedImage jp-OutputArea-output ">
+<img src="data:image/png;base64,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
+"
+class="
+"
+>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Absolute-Value">Absolute Value<a class="anchor-link" href="#Absolute-Value">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>The absolute value of a real number is the number itself. The absolute value of x is represented by modulus, i.e. |x|. Hence, the modulus of any value always gives a positive value, such that;</p>
+<p>|3| = 3</p>
+<p>|-3| = 3</p>
+<p>Now, in case of complex numbers, finding the modulus has a different method.</p>
+<p>Suppose, $z = x+iy $ is a complex number. Then, mod of z, will be:</p>
+<p>|z| = $\sqrt{x^2+y^2}$</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This expression is obtained when we apply the Pythagorean theorem in a complex plane. Hence, mod of complex number, z is extended from 0 to z and mod of real numbers x and y is extended from 0 to x and 0 to y respectively. Now these values form a right triangle, where 0 is the vertex of the acute angle. Now, applying Pythagoras theorem,</p>
+<p>$|z|^2 = |x|^2+|y|^2$</p>
+<p>$|z|^2 = x^2 + y^2$</p>
+<p>$|z| = \sqrt{x^2+y^2}$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">complex_num4</span> <span class="o">=</span> <span class="mi">4</span><span class="o">-</span><span class="mi">8</span><span class="o">*</span><span class="n">I</span>
+<span class="c1">#define a complex number</span>
+
+<span class="nb">abs</span><span class="p">(</span><span class="n">complex_num4</span><span class="p">)</span>
+<span class="c1">#calculate the absolute value</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle 4 \sqrt{5}$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Addition,-Subtraction,-Multiplication,-Division">Addition, Subtraction, Multiplication, Division<a class="anchor-link" href="#Addition,-Subtraction,-Multiplication,-Division">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s2">&quot;a b c d x y&quot;</span><span class="p">,</span> <span class="n">real</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  
+<span class="c1">#define the variable</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Addition">Addition<a class="anchor-link" href="#Addition">&#182;</a></h3><p>$(a + ib) + (c + id) = (a + c) + i(b + d)$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">expr</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">I</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">+</span><span class="p">(</span><span class="n">c</span><span class="o">+</span><span class="n">d</span><span class="o">*</span><span class="n">I</span><span class="p">)</span>
+
+<span class="n">expand_complex</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle a + c + i \left(b + d\right)$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Subtraction">Subtraction<a class="anchor-link" href="#Subtraction">&#182;</a></h3><p>$(a + ib) – (c + id) = (a – c) + i(b – d)$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">expr</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">I</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="n">c</span><span class="o">+</span><span class="n">d</span><span class="o">*</span><span class="n">I</span><span class="p">)</span>
+
+<span class="n">expand_complex</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle a - c + i \left(b - d\right)$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Multiplication">Multiplication<a class="anchor-link" href="#Multiplication">&#182;</a></h3><p>When two complex numbers are multiplied by each other, the multiplication process should be similar to the multiplication of two binomials. It means that the FOIL method (Distributive multiplication process) is used.</p>
+<p>$(a + ib). (c + id) = (ac – bd) + i(ad + bc)$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">expr</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">I</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">c</span><span class="o">+</span><span class="n">d</span><span class="o">*</span><span class="n">I</span><span class="p">)</span>
+
+<span class="n">expand_complex</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle a c - b d + i \left(a d + b c\right)$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Division">Division<a class="anchor-link" href="#Division">&#182;</a></h3><p>The division of two complex numbers can be performed by multiplying the numerator and denominator by its conjugate value of the denominator, and then applying the FOIL Method.</p>
+<p>$(a + ib) / (c + id) = (ac+bd)/ (c^2 + d^2) + i(bc – ad) / (c^2 + d^2)$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">expr</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">I</span><span class="o">*</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">c</span><span class="o">+</span><span class="n">d</span><span class="o">*</span><span class="n">I</span><span class="p">)</span>
+
+<span class="n">expand_complex</span><span class="p">(</span><span class="n">expr</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle \frac{a c}{c^{2} + d^{2}} + \frac{b d}{c^{2} + d^{2}} + i \left(- \frac{a d}{c^{2} + d^{2}} + \frac{b c}{c^{2} + d^{2}}\right)$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Power-of-Iota-(i)">Power of Iota (i)<a class="anchor-link" href="#Power-of-Iota-(i)">&#182;</a></h1><p>Depending upon the power of “i”, it can take the following values;</p>
+<p>$i^{4k+1} = i.i^{4k+2} = 1 $</p>
+<p>Where k can have an integral value (positive or negative).</p>
+<p>Similarly, we can find for the negative power of i, which are as follows;</p>
+<p>$i^{-1} = 1 / i$</p>
+<p>Note: $\sqrt{-1} × \sqrt{-1} $ = $\sqrt{-1  × -1}$ = $\sqrt{1}$ = $1$ contradicts to the fact that $i^2 = -1$.</p>
+<p>Therefore, for an imaginary number, $\sqrt{a} × \sqrt{b}$ is not equal to $\sqrt{ab}$.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This signifies that 
+i
+ repeats its values after every 4th power. We can generalize this fact to represent this pattern (where n is any integer), as,</p>
+<p>$i^{4n} = 1$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>1
+1
+1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>$i^{4n+1} = i$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>I
+I
+I
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>$i^{4n+2} = -1$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-1
+-1
+-1
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>$i^{4n+3} = -i$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">2</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span> <span class="n">I</span><span class="o">**</span><span class="p">(</span><span class="mi">4</span><span class="o">*</span><span class="mi">3</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span> <span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>-I
+-I
+-I
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Euler's-Formula-%7C-Exponential-Form-of-Complex-Numbers">Euler's Formula | Exponential Form of Complex Numbers<a class="anchor-link" href="#Euler's-Formula-%7C-Exponential-Form-of-Complex-Numbers">&#182;</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Euler's Formula for Complex Numbers:</p>
+<p>$e^{i \pi} + 1 = 0$</p>
+<p>The parts of the formula represent key components in mathematics. The formula combines components that usually do not appear together.</p>
+<p>e represents the base of the natural logarithm</p>
+<p>i represents the imaginary unit</p>
+<p>$\pi$  represents the ratio of the circumference to the diameter of a circle</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This formula is also called Euler's Identity. It is derived from the original formula, which contains trigonometric functions cosine, sine, and $\theta$
+. The original formula is written as follows:</p>
+<p>$e^{i \theta} = cos\theta + i sin \theta$</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="Exponential-Form-(Euler's-Notation)">Exponential Form (Euler's Notation)<a class="anchor-link" href="#Exponential-Form-(Euler's-Notation)">&#182;</a></h3><p>$z = r e^{i \theta}$</p>
+<h3 id="Polar-Form">Polar Form<a class="anchor-link" href="#Polar-Form">&#182;</a></h3><p>$z = r \angle \theta$</p>
+<p><img src="images/polar-coordinates-r-phi.svg3406642667822480950.png" alt="&quot;&quot;"></p>
+<h3 id="Polar-Representation-of-Complex-Numbers">Polar Representation of Complex Numbers<a class="anchor-link" href="#Polar-Representation-of-Complex-Numbers">&#182;</a></h3><p>$z= x+iy$, then
+$r = \sqrt{x^2+y^2}$ and $\theta = tan^{-1}(\frac{y}{x})$</p>
+
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">eq</span> <span class="o">=</span> <span class="mi">13</span><span class="o">-</span><span class="mi">72</span><span class="o">*</span><span class="n">I</span>
+
+<span class="n">euler_eq</span> <span class="o">=</span> <span class="nb">abs</span><span class="p">(</span><span class="n">eq</span><span class="p">)</span><span class="o">*</span><span class="n">exp</span><span class="p">(</span><span class="n">I</span> <span class="o">*</span> <span class="n">arg</span><span class="p">(</span><span class="n">eq</span><span class="p">))</span>
+<span class="c1">#change complex form to euler form</span>
+<span class="c1">#atan = arctan</span>
+
+<span class="n">euler_eq</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[82]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle \sqrt{5353} e^{- i \operatorname{atan}{\left(\frac{72}{13} \right)}}$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">euler_eq</span><span class="o">.</span><span class="n">evalf</span><span class="p">()</span>
+<span class="c1">#change euler form to complex form</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[83]:</div>
+
+
+
+
+<div class="jp-RenderedLatex jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/latex">
+$\displaystyle 13.0 - 72.0 i$
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
